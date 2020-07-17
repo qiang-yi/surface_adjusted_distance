@@ -2,9 +2,9 @@
 
 This repository stores programs for the simulation of surface-adjusted distance measurement in digital elevation models. The methodology and results of the case study are documented in the manuscript "_A Systematic Evaluation of Surface-Adjusted Distance Measurements using HPC-enabled Monte Carlo Simulation_" under review by the journal of Geographical Analysis.
 
-## Data collection
-This folder contains Python programs for collecting real-time and benchmark travel times from Google Maps API. Specifically:
-- **main.py**: The main function. It uses the _map_ function in IPyParallel to calculate distance using different surface-adjustment methods (calls _surfaceAdjusted.py_), in different resolutions of DEM and in 6 different study areas.
+## Functions
+This folder contains Python programs for the Monte Carlo simulation of evaluating surface-adjusted distance measurements in DEM and TIN.
+- **main.py**: The main function. It uses the _map_ function in IPyParallel to iterate distance measurements of 1000 transects in 6 study areas using different surface-adjustment methods (calls _surfaceAdjusted.py_) and in different resolutions of DEM.
 - **main.ipynb**: Jupyter Notebook of the main function.
 
 - **surfaceAdjusted.py**: contain the eight surface-adjusted distance measurement methods.
